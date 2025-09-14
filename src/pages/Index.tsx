@@ -1,9 +1,9 @@
 import Navigation from '@/components/Navigation';
-import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/gallery/IMG_5090.JPG'
-import portraitSample from '@/assets/gallery/IMG_4174.JPEG';
-import weddingSample from '@/assets/gallery/IMG_9740.jpeg';
-import familySample from '@/assets/gallery/IMG_9737.jpeg';
+import { Button } fro '@/components/ui/button';
+import heroImage from '../assets/gallery/IMG_5090.JPG'
+import portraitSample from '../assets/gallery/IMG_4174.jpeg';
+import weddingSample from '../assets/gallery/IMG_9740.jpeg';
+import familySample from '../assets/gallery/IMG_9737.jpeg';
 
 const Index = () => {
   return (

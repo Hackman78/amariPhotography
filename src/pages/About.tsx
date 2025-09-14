@@ -1,6 +1,6 @@
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
-import sarahPortrait from '@/assets/logo.png';
+import sarahPortrait from '../assets/logo.png';
 
 const About = () => {
   return (
