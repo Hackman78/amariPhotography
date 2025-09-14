@@ -1,6 +1,6 @@
 import Navigation from '@/components/Navigation';
-import { Button } fro '@/components/ui/button';
-import heroImage from '../assets/gallery/IMG_5090.JPG'
+import { Button } from '@/components/ui/button';
+import heroImage from '../assets/gallery/IMG_5090.JPG';
 import portraitSample from '../assets/gallery/IMG_4174.jpeg';
 import weddingSample from '../assets/gallery/IMG_9740.jpeg';
 import familySample from '../assets/gallery/IMG_9737.jpeg';
@@ -98,7 +98,7 @@ const Index = () => {
         <div className='container mx-auto px-6'>
           <div className='max-w-4xl mx-auto text-center'>
             <h2 className='text-4xl font-serif font-bold text-primary mb-8'>
-              Hi, I'm Amari 
+              Hi, I'm Amari
             </h2>
             <p className='text-xl text-foreground/80 leading-relaxed mb-8'>
               With over 8 years of experience, I specialize in capturing
