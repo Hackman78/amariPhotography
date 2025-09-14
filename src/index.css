@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Photography Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Core Colors - Warm, sophisticated palette */
+    --background: 30 8% 98%;
+    --foreground: 25 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 10% 15%;
+
+    /* Sophisticated charcoal primary */
+    --primary: 25 15% 20%;
+    --primary-foreground: 30 8% 98%;
+
+    /* Warm secondary tones */
+    --secondary: 28 12% 92%;
+    --secondary-foreground: 25 15% 20%;
+
+    /* Subtle muted tones */
+    --muted: 25 8% 95%;
+    --muted-foreground: 25 8% 45%;
+
+    /* Elegant accent */
+    --accent: 35 25% 88%;
+    --accent-foreground: 25 15% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 30 8% 98%;
+
+    --border: 25 12% 88%;
+    --input: 25 12% 88%;
+    --ring: 25 15% 20%;
+
+    /* Photography-specific tokens */
+    --gallery-hover: 25 15% 20%;
+    --overlay: 25 15% 20%;
+    --hero-gradient: linear-gradient(135deg, hsl(25 15% 20% / 0.9), hsl(25 15% 20% / 0.7));
+    --elegant-shadow: 0 10px 40px -10px hsl(25 15% 20% / 0.15);
+    --photo-shadow: 0 8px 32px -4px hsl(25 15% 20% / 0.12);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 15% 8%;
+    --foreground: 30 8% 95%;
+
+    --card: 25 15% 10%;
+    --card-foreground: 30 8% 95%;
+
+    --popover: 25 15% 10%;
+    --popover-foreground: 30 8% 95%;
+
+    --primary: 30 8% 95%;
+    --primary-foreground: 25 15% 8%;
+
+    --secondary: 25 12% 15%;
+    --secondary-foreground: 30 8% 95%;
+
+    --muted: 25 12% 12%;
+    --muted-foreground: 25 8% 60%;
+
+    --accent: 25 12% 18%;
+    --accent-foreground: 30 8% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 30 8% 95%;
+
+    --border: 25 12% 18%;
+    --input: 25 12% 18%;
+    --ring: 30 8% 95%;
+
+    --gallery-hover: 30 8% 95%;
+    --overlay: 30 8% 95%;
+    --hero-gradient: linear-gradient(135deg, hsl(25 15% 8% / 0.9), hsl(25 15% 8% / 0.7));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .photo-gallery-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+
+  .photo-item {
+    @apply relative overflow-hidden rounded-lg cursor-pointer;
+    transition: var(--transition-smooth);
+    box-shadow: var(--photo-shadow);
+  }
+
+  .photo-item:hover {
+    @apply scale-105;
+    box-shadow: var(--elegant-shadow);
+  }
+
+  .hero-overlay {
+    background: var(--hero-gradient);
+  }
+
+  .elegant-card {
+    @apply bg-card border border-border rounded-lg p-8;
+    box-shadow: var(--elegant-shadow);
+    transition: var(--transition-smooth);
+  }
+
+  .elegant-card:hover {
+    @apply scale-[1.02];
+  }
+}
+
