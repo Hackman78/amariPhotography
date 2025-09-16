@@ -101,7 +101,7 @@ const Index = () => {
               Hi, I'm Amari
             </h2>
             <p className='text-xl text-foreground/80 leading-relaxed mb-8'>
-              With over 8 years of experience, I specialize in capturing
+              With over 3 years of experience, I specialize in capturing
               authentic emotions and genuine connections. Every session is a
               unique collaboration to create timeless images that you'll
               treasure forever.
