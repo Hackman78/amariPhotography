@@ -196,7 +196,7 @@ const Contact = () => {
   const pricingPackages = [
     {
       name: "30 Min Session",
-      price: "$50",
+      price: "$60",
       duration: "30 Minutes",
       includes: [
         "30 Minute Studio or Outside Session",
@@ -207,7 +207,7 @@ const Contact = () => {
     },
     {
       name: "1hr - 4hr Session",
-      price: "$100 / hour",
+      price: "$120 / hour",
       duration: "1 - 4 Hour",
       includes: [
         "1 hour outdoor family session",
@@ -221,7 +221,7 @@ const Contact = () => {
     {
       name: "4 - 6 hour events",
       price: "$350",
-      duration: "4 - 5 Hours",
+      duration: "4 - 6 Hours",
       includes: [
         "4 - 6 hours of quality photos",
         "35 edited high-resolution images",
