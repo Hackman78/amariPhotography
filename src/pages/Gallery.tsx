@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
+import { Link } from 'react-router-dom';
 
 const Gallery = () => {
   const [photos, setPhotos] = useState([]);
@@ -8,11 +9,11 @@ const Gallery = () => {
   useEffect(() => {
     const loadImages = async () => {
       try {
-        const imageModules = import.meta.glob('../assets/gallery/*.{png,jpg,jpeg,PNG,JPG,JPEG}', { 
+        const imageModules = import.meta.glob('../assets/gallery/*.{png,jpg,jpeg,PNG,JPG,JPEG}', {
           eager: true,
           as: 'url'
         });
-        
+
         const images = Object.entries(imageModules).map(([path, url], index) => {
           const filename = path.split('/').pop().split('.')[0];
           return {
@@ -22,7 +23,7 @@ const Gallery = () => {
             category: determineCategory(filename)
           };
         });
-        
+
         setPhotos(images);
         setLoading(false);
       } catch (error) {
@@ -56,7 +57,7 @@ const Gallery = () => {
               A collection of moments captured through my lens, showcasing the life that you lead
             </p>
           </div>
-          
+
           {loading ? (
             <div className="text-center text-muted-foreground">
               Loading gallery...
@@ -87,17 +88,12 @@ const Gallery = () => {
               ))}
             </div>
           )}
-          
+
           <div className="text-center mt-16">
             <p className="text-muted-foreground mb-8">
               Like what you see? Let's create something beautiful together.
             </p>
-           <a 
-              href="/contact"
-              className="inline-flex items-center px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
-            >
-              Book a Session
-            </a>
+              <Link to='/contact'>Book a Session</Link>
           </div>
         </div>
       </main>

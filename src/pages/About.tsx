@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import sarahPortrait from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -42,50 +43,49 @@ const About = () => {
                                         I also offer personal portrait sessions that are completely customizable to your vision. Whether you need professional headshots, family portraits, or creative artistic shots, I work closely with each client to create a relaxed experience that results in photographs you'll love to share.
                                     </p>
                                 </div>
-
                                 <div className="mt-10 space-y-4">
                                     <h3 className="text-2xl font-serif font-semibold text-primary">
                                         Specialties
                                     </h3>
-                                    <div className="grid grid-cols-2 gap-4">
-                                        <div className="flex items-center space-x-3">
-                                            <div className="w-2 h-2 bg-primary rounded-full"></div>
-                                            <span>Portrait Photography</span>
-                                        </div>
-                                        <div className="flex items-center space-x-3">
-                                            <div className="w-2 h-2 bg-primary rounded-full"></div>
-                                            <span>Wedding Photography</span>
-                                        </div>
-                                        <div className="flex items-center space-x-3">
-                                            <div className="w-2 h-2 bg-primary rounded-full"></div>
-                                            <span>Family Sessions</span>
-                                        </div>
-                                        <div className="flex items-center space-x-3">
-                                            <div className="w-2 h-2 bg-primary rounded-full"></div>
-                                            <span>Event Photography</span>
-                                        </div>
+                                </div>
+                                <div className="grid grid-cols-2 gap-4">
+                                    <div className="flex items-center space-x-3">
+                                        <div className="w-2 h-2 bg-primary rounded-full"></div>
+                                        <span>Portrait Photography</span>
+                                    </div>
+                                    <div className="flex items-center space-x-3">
+                                        <div className="w-2 h-2 bg-primary rounded-full"></div>
+                                        <span>Wedding Photography</span>
+                                    </div>
+                                    <div className="flex items-center space-x-3">
+                                        <div className="w-2 h-2 bg-primary rounded-full"></div>
+                                        <span>Family Sessions</span>
+                                    </div>
+                                    <div className="flex items-center space-x-3">
+                                        <div className="w-2 h-2 bg-primary rounded-full"></div>
+                                        <span>Event Photography</span>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div className="mt-12 flex gap-4">
-                                    <Button asChild size="lg">
-                                        <a href="/contact">Book a Session</a>
-                                    </Button>
-                                    <Button variant="outline" asChild size="lg">
-                                        <a href="/gallery">View Gallery</a>
-                                    </Button>
-                                </div>
+                            <div className="mt-12 flex gap-4">
+                                <Button asChild size="lg">
+                                    <Link to='/contact'>Book a Session</Link>
+                                </Button>
+                                <Button variant="outline" asChild size="lg">
+                                    <Link to='/gallery'>View Gallery</Link>
+                                </Button>
                             </div>
                         </div>
+                    </div>
 
-                        {/* Quote Section */}
-                        <div className="mt-24 text-center">
-                            <div className="max-w-4xl mx-auto elegant-card">
-                                <blockquote className="text-2xl font-serif italic text-primary mb-4">
-                                    "Photography is the story I fail to put into words."
-                                </blockquote>
-                                <cite className="text-muted-foreground">— Destin Sparks</cite>
-                            </div>
+                    {/* Quote Section */}
+                    <div className="mt-24 text-center">
+                        <div className="max-w-4xl mx-auto elegant-card">
+                            <blockquote className="text-2xl font-serif italic text-primary mb-4">
+                                "Photography is the story I fail to put into words."
+                            </blockquote>
+                            <cite className="text-muted-foreground">— Destin Sparks</cite>
                         </div>
                     </div>
                 </div>

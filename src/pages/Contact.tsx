@@ -351,13 +351,13 @@ const Contact = () => {
                     <label className="text-sm font-medium text-foreground mb-2 block">
                       First Name
                     </label>
-                    <Input placeholder="Your first name" />
+                    <Input disabled placeholder="Your first name" />
                   </div>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
                       Last Name
                     </label>
-                    <Input placeholder="Your last name" />
+                    <Input disabled placeholder="Your last name" />
                   </div>
                 </div>
 
@@ -365,21 +365,21 @@ const Contact = () => {
                   <label className="text-sm font-medium text-foreground mb-2 block">
                     Email Address
                   </label>
-                  <Input type="email" placeholder="your.email@example.com" />
+                  <Input disabled type="email" placeholder="your.email@example.com" />
                 </div>
 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
                     Phone Number
                   </label>
-                  <Input type="tel" placeholder="(555) 123-4567" />
+                  <Input disabled type="tel" placeholder="(555) 123-4567" />
                 </div>
 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
                     Event Date (if applicable)
                   </label>
-                  <Input type="date" />
+                  <Input disabled type="date" />
                 </div>
 
                 <div>
@@ -387,6 +387,7 @@ const Contact = () => {
                     Tell me about your vision
                   </label>
                   <Textarea
+                    disabled
                     placeholder="Describe your photography needs, preferred style, location ideas, or any special requirements..."
                     rows={5}
                   />
