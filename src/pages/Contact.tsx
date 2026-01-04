@@ -392,7 +392,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full">
+                <Button disabled type="submit" size="lg" className="w-full">
                   Send Message
                 </Button>
               </form>
